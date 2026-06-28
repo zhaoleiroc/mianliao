@@ -1,0 +1,12 @@
+# 临时文件和缓存
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+~$*
+
+# Claude AI 配置
+.claude/
+
+# 系统设置（不含敏感数据）
+settings.local.json
