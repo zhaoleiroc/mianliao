@@ -1,0 +1,48 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate data + TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ---- Data layer: validate the committed JSON ----
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Validate data/*.json
+        run: python scripts/validate_data.py
+
+      # ---- App layer: TypeScript type check ----
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install npm deps
+        run: npm ci
+
+      - name: TypeScript build (no emit)
+        run: npx tsc -b
+
+      # ---- Build smoke test: catches Vite config regressions ----
+      - name: Build (with project-page base)
+        env:
+          BASE_URL: /mianliao/
+        run: npm run build

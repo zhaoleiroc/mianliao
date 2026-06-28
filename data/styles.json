@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-06-28T18:16:52",
+  "total": 14,
+  "styles": [
+    {
+      "id": "4921e70a3e68",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "粘胶，复合，烫印",
+      "fabric_description": "49%粘胶纤维 48% 聚酯 3% 弹性纤维",
+      "fabric_composition": {
+        "rayon": 49.0,
+        "polyester": 48.0,
+        "spandex": 3.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 2
+    },
+    {
+      "id": "f1ce74affaa0",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "圆领，Modal面料，Softouch，胸前印有文字图案，普通版型T恤",
+      "fabric_description": "79% 莫代尔21% 涤纶",
+      "fabric_composition": {
+        "modal": 79.0,
+        "polyester": 21.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 3
+    },
+    {
+      "id": "aa0cc16611a4",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "互锁面料，柔韧，柔软触感，胸前印有注射印花",
+      "fabric_description": "涤纶粘胶",
+      "fabric_composition": {},
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 4
+    },
+    {
+      "id": "08704da4949b",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "柔软，透气，防汗，无刮痕，胸前绣有标志细节的基础款T恤",
+      "fabric_description": "50% 莫达尔 50% 棉",
+      "fabric_composition": {
+        "modal": 50.0,
+        "cotton": 50.0
+      },
+      "extra_notes": "Modal 面料：以丝滑柔软和透气结构脱颖而出。吸收水分迅速，使用感焕然一新。得益于其耐用的质地，它能长时间保持形状，每次洗涤的第一天都能保持柔软。",
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 5
+    },
+    {
+      "id": "da381c45f3ce",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "粘胶混纺，柔和触感，侧面有注出文字印花细节，互锁面料",
+      "fabric_description": "49% 人棉 48% 涤纶  3% 氨纶",
+      "fabric_composition": {
+        "rayon": 49.0,
+        "polyester": 48.0,
+        "spandex": 3.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 6
+    },
+    {
+      "id": "a9011afbe52a",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "胸部反光文字细节，互锁面料",
+      "fabric_description": "49%聚酯 46% 粘胶纤维 5% 弹性烷",
+      "fabric_composition": {
+        "polyester": 49.0,
+        "rayon": 46.0,
+        "spandex": 5.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 7
+    },
+    {
+      "id": "082761f7daf9",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "小牛皮洗标，Appé领，横向提花，亚麻混纺，棉质，下摆的品牌细节",
+      "fabric_description": "棉+亚麻",
+      "fabric_composition": {},
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 8
+    },
+    {
+      "id": "7048bbb1919e",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "网眼针织布，刺绣logo",
+      "fabric_description": "50棉50涤",
+      "fabric_composition": {
+        "cotton": 50.0,
+        "涤": 50.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 9
+    },
+    {
+      "id": "4a2515bb6252",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "马球领，短袖，100%纯棉，美国Pique面料",
+      "fabric_description": "纯棉",
+      "fabric_composition": {},
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 10
+    },
+    {
+      "id": "0c25a264ae8d",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "带拉链的Polo衫领，100%棉，透气，胸前有注射印花细节，罗纹和条纹领子及袖子，Pique面料",
+      "fabric_description": "纯棉 珠地网眼面料",
+      "fabric_composition": {},
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 11
+    },
+    {
+      "id": "ca7c559806ae",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "拉链Polo衫领，提花图案，胸前标志刺绣细节，罗纹领和袖子，弹性面料",
+      "fabric_description": "89%聚酯，11%氨纶，\n提花",
+      "fabric_composition": {
+        "polyester": 89.0,
+        "spandex": 11.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 12
+    },
+    {
+      "id": "a10ee22c4d7f",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "三扣Polo衫领，花花线，镂空，罗纹针织领袖和下摆，皮革标",
+      "fabric_description": "62棉，38涤",
+      "fabric_composition": {
+        "cotton": 62.0,
+        "涤": 38.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 13
+    },
+    {
+      "id": "3331e8273890",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "三扣Polo衫领，弹力提花针织面料，有纹理的罗纹领子和袖子，胸前有标志刺绣细节",
+      "fabric_description": "%88 涤纶  %12 氨纶",
+      "fabric_composition": {
+        "polyester": 88.0,
+        "spandex": 12.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 14
+    },
+    {
+      "id": "ac4d0af6fcb1",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit_style",
+      "style_description": "拉链Polo衫领，提花图案，胸前标志刺绣细节，罗纹领和袖子，弹性面料",
+      "fabric_description": "89涤，11氨纶",
+      "fabric_composition": {
+        "涤": 89.0,
+        "spandex": 11.0
+      },
+      "extra_notes": null,
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA 针织面料报价-2026.3.9.xlsx",
+      "source_row": 15
+    }
+  ]
+}

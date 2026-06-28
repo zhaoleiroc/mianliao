@@ -1,0 +1,2527 @@
+{
+  "generated_at": "2026-06-28T18:16:52",
+  "schema_version": 1,
+  "counts": {
+    "huarui": 19,
+    "zhongtao": 27,
+    "wantai": 18,
+    "home_fr": 9,
+    "3savva": 13
+  },
+  "total": 86,
+  "fabrics": [
+    {
+      "id": "9dd131d3de11",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "双面弹力摇粒绒",
+      "code": "SKDSY23592",
+      "composition_raw": "94%涤纶 + 6%氨纶",
+      "composition": {
+        "polyester": 94.0,
+        "spandex": 6.0
+      },
+      "spec_raw": "165cm×380g/㎡",
+      "weight_gsm": 380,
+      "weight_range": null,
+      "features": [
+        "高克重保暖、双面摇粒绒、微弹舒适"
+      ],
+      "applications": [
+        "秋冬保暖外套",
+        "卫衣",
+        "家居服"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 3
+    },
+    {
+      "id": "92fa986f5aa8",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "灯芯绒复合摇粒绒",
+      "code": "SKDH26067",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "150cm×350g/㎡",
+      "weight_gsm": 350,
+      "weight_range": null,
+      "features": [
+        "灯芯绒正面+摇粒绒反面、复古耐磨+保暖"
+      ],
+      "applications": [
+        "复古风外套",
+        "工装裤",
+        "马甲"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 4
+    },
+    {
+      "id": "ce364640cf78",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "RE氨纶摇粒绒",
+      "code": "SKDY24-23162F7",
+      "composition_raw": "94%再生涤 + 6%氨纶",
+      "composition": {
+        "recycled_polyester": 94.0,
+        "spandex": 6.0
+      },
+      "spec_raw": "160cm×250g/㎡",
+      "weight_gsm": 250,
+      "weight_range": null,
+      "features": [
+        "环保再生材质、轻薄微弹、双面结构"
+      ],
+      "applications": [
+        "户外软壳",
+        "运动卫衣",
+        "环保系列服饰"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 5
+    },
+    {
+      "id": "c8c89b991b67",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "提花罗纹",
+      "code": "SKDSY25132XS",
+      "composition_raw": "85%锦纶 + 15%氨纶",
+      "composition": {
+        "nylon": 85.0,
+        "spandex": 15.0
+      },
+      "spec_raw": "120cm×330-340g/㎡",
+      "weight_gsm": 340,
+      "weight_range": null,
+      "features": [
+        "高弹力罗纹、提花肌理、耐磨亲肤"
+      ],
+      "applications": [
+        "修身打底衫",
+        "瑜伽服",
+        "罗纹领口/袖口"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 6
+    },
+    {
+      "id": "2b534155c859",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "印花氨纶网眼布",
+      "code": "SKD25351YH追加",
+      "composition_raw": "52%凉感涤纶 + 43%棉 + 5%氨纶",
+      "composition": {
+        "凉感涤纶": 52.0,
+        "cotton": 43.0,
+        "spandex": 5.0
+      },
+      "spec_raw": "150cm×185g/㎡",
+      "weight_gsm": 185,
+      "weight_range": null,
+      "features": [
+        "凉感透气、网眼结构、轻薄高弹"
+      ],
+      "applications": [
+        "夏季运动T恤",
+        "健身服",
+        "防晒衣"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 7
+    },
+    {
+      "id": "a35d27ef686a",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "氨纶云彩摇粒绒",
+      "code": "SKD22016",
+      "composition_raw": "96%涤纶 + 4%氨纶",
+      "composition": {
+        "polyester": 96.0,
+        "spandex": 4.0
+      },
+      "spec_raw": "148cm×225g/㎡",
+      "weight_gsm": 225,
+      "weight_range": null,
+      "features": [
+        "轻薄保暖、云彩肌理、微弹不易变形"
+      ],
+      "applications": [
+        "春秋卫衣",
+        "空调毯",
+        "儿童保暖服饰"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 8
+    },
+    {
+      "id": "ee3c9c309506",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "RE提花空气层",
+      "code": "SYT23116（C）",
+      "composition_raw": "50%再生涤 + 38%棉 + 12%莫代尔",
+      "composition": {
+        "recycled_polyester": 50.0,
+        "cotton": 38.0,
+        "modal": 12.0
+      },
+      "spec_raw": "150cm×270g/㎡",
+      "weight_gsm": 270,
+      "weight_range": null,
+      "features": [
+        "环保材质、棉莫亲肤、空气层挺括有型"
+      ],
+      "applications": [
+        "春秋卫衣",
+        "打底衫",
+        "家居服"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 9
+    },
+    {
+      "id": "eaef10da8be1",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "楼梯布",
+      "code": "SYT25-23319",
+      "composition_raw": "55%棉 + 44%涤 + 1%氨纶",
+      "composition": {
+        "cotton": 55.0,
+        "涤": 44.0,
+        "spandex": 1.0
+      },
+      "spec_raw": "155cm×250g/㎡",
+      "weight_gsm": 250,
+      "weight_range": null,
+      "features": [
+        "阶梯肌理、棉涤混纺、轻微弹力"
+      ],
+      "applications": [
+        "休闲T恤",
+        "polo衫",
+        "工装上衣"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 10
+    },
+    {
+      "id": "d6c58a2c8991",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "雪尼尔粗细针",
+      "code": "SKDT25-24215翻单2",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "145cm×365-380g/㎡",
+      "weight_gsm": 380,
+      "weight_range": null,
+      "features": [
+        "高克重软糯、粗细针肌理、耐磨保暖"
+      ],
+      "applications": [
+        "秋冬阔腿裤",
+        "毛衣",
+        "家居软装"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 11
+    },
+    {
+      "id": "171e3462544a",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "粗针罗纹复合摇粒绒",
+      "code": "SKDY25-23185F3",
+      "composition_raw": "62%涤纶 + 38%再生涤",
+      "composition": {
+        "polyester": 62.0,
+        "recycled_polyester": 38.0
+      },
+      "spec_raw": "150cm×450g/㎡",
+      "weight_gsm": 450,
+      "weight_range": null,
+      "features": [
+        "超厚保暖、罗纹复合摇粒绒、环保属性"
+      ],
+      "applications": [
+        "深冬外套",
+        "工装裤",
+        "户外防寒服"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 12
+    },
+    {
+      "id": "64802c62b1ab",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "人字纹提花布",
+      "code": "SKDSY25361",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "有效150cm×320g/㎡（实际155cm×340-350g/㎡）",
+      "weight_gsm": 320,
+      "weight_range": null,
+      "features": [
+        "人字纹肌理、挺括耐磨、抗皱易打理"
+      ],
+      "applications": [
+        "秋冬休闲外套",
+        "工装裤",
+        "半身裙",
+        "家居软装"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 13
+    },
+    {
+      "id": "9e45af91d87d",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "粗细针（红色款）",
+      "code": "SKDSY26-25176",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "150cm×450-470g/㎡（实际448g）",
+      "weight_gsm": 470,
+      "weight_range": null,
+      "features": [
+        "高克重厚实、肌理清晰、保暖耐磨"
+      ],
+      "applications": [
+        "秋冬厚款毛衣",
+        "外套",
+        "保暖裤"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 14
+    },
+    {
+      "id": "6f471855ce8a",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "粗细针（橙色款）",
+      "code": "SKD25249",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "125cm×300-305g/㎡",
+      "weight_gsm": 305,
+      "weight_range": null,
+      "features": [
+        "中等克重、肌理清晰、挺括有型"
+      ],
+      "applications": [
+        "秋冬休闲外套",
+        "卫衣",
+        "工装裤"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 15
+    },
+    {
+      "id": "7a5185259212",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "粗细针（全棉款）",
+      "code": "SKDL26044",
+      "composition_raw": "100%棉",
+      "composition": {
+        "cotton": 100.0
+      },
+      "spec_raw": "145cm×360-370g/㎡",
+      "weight_gsm": 370,
+      "weight_range": null,
+      "features": [
+        "全棉亲肤、肌理清晰、厚实保暖"
+      ],
+      "applications": [
+        "秋冬厚款毛衣",
+        "针织开衫",
+        "休闲外套"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 16
+    },
+    {
+      "id": "cb5457ae1912",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "双色一体绒",
+      "code": "SYY23381",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "150cm×310g/㎡",
+      "weight_gsm": 310,
+      "weight_range": null,
+      "features": [
+        "双色肌理、一体绒面、厚实保暖"
+      ],
+      "applications": [
+        "秋冬保暖外套",
+        "卫衣",
+        "休闲裤"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 17
+    },
+    {
+      "id": "b50973cf40eb",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "彩条弹力棉毛布",
+      "code": "SKDY23-19558F11",
+      "composition_raw": "88%涤纶 + 12%氨纶",
+      "composition": {
+        "polyester": 88.0,
+        "spandex": 12.0
+      },
+      "spec_raw": "160cm×270g/㎡",
+      "weight_gsm": 270,
+      "weight_range": null,
+      "features": [
+        "彩条肌理、高弹力、亲肤保暖"
+      ],
+      "applications": [
+        "秋冬保暖内衣",
+        "家居服",
+        "打底衫"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 18
+    },
+    {
+      "id": "d4961705066f",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "双面仿羊羔绒",
+      "code": "SKDSY25383",
+      "composition_raw": "100%涤纶",
+      "composition": {
+        "polyester": 100.0
+      },
+      "spec_raw": "150cm×370-400g/㎡",
+      "weight_gsm": 400,
+      "weight_range": null,
+      "features": [
+        "双面绒感、厚实保暖、柔软蓬松"
+      ],
+      "applications": [
+        "秋冬厚款外套",
+        "大衣",
+        "卫衣",
+        "毛毯"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 19
+    },
+    {
+      "id": "9139bc8975e7",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "RE单面仿羊羔绒",
+      "code": "SKDL26-25030",
+      "composition_raw": "100%再生涤",
+      "composition": {
+        "recycled_polyester": 100.0
+      },
+      "spec_raw": "148cm×285g/㎡",
+      "weight_gsm": 285,
+      "weight_range": null,
+      "features": [
+        "环保再生材质、单面绒感、轻薄保暖"
+      ],
+      "applications": [
+        "春秋款卫衣",
+        "休闲外套",
+        "家居服"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 20
+    },
+    {
+      "id": "3bba82b4af67",
+      "supplier": "常熟市华瑞针纺织",
+      "category": "knit",
+      "name": "氨纶方格摇粒绒",
+      "code": "SKDY22011",
+      "composition_raw": "94%涤纶 + 6%氨纶",
+      "composition": {
+        "polyester": 94.0,
+        "spandex": 6.0
+      },
+      "spec_raw": "160cm×175g/㎡",
+      "weight_gsm": 175,
+      "weight_range": null,
+      "features": [
+        "轻薄微弹、方格肌理、透气保暖"
+      ],
+      "applications": [
+        "春秋卫衣",
+        "休闲外套",
+        "家居服"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\华瑞针织面料汇总表.xlsx",
+      "source_row": 21
+    },
+    {
+      "id": "d2f9aedfc8a2",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "小横条四面弹",
+      "code": "ZT24-NL082-NL",
+      "composition_raw": "92% NYLON、8% SP",
+      "composition": {
+        "nylon": 92.0,
+        "spandex": 8.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "PLAIN（平纹，小横条纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 138,
+      "price_rmb_per_m": 17.2,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 2
+    },
+    {
+      "id": "29f34358aaa9",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "碧螺纺",
+      "code": "ZT24-NI.044-NL",
+      "composition_raw": "100% NYLON",
+      "composition": {
+        "nylon": 100.0
+      },
+      "weave": "216×190/20D*20D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "56/57英寸",
+      "width_cm": 143.5,
+      "weight_gsm": 39,
+      "price_rmb_per_m": 14.3,
+      "applications": [
+        "皮肤衣",
+        "防晒衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 3
+    },
+    {
+      "id": "0dbe3f3231df",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "50D消光尼龙四面弹",
+      "code": "ZT24-NL046-NL",
+      "composition_raw": "90% NYLON、10% SP",
+      "composition": {
+        "nylon": 90.0,
+        "spandex": 10.0
+      },
+      "weave": "50D+20D*50D+20D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 100,
+      "price_rmb_per_m": 19.6,
+      "applications": [
+        "裤料",
+        "防晒衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 4
+    },
+    {
+      "id": "ff679851fc22",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "可降解四面弹",
+      "code": "ZT24-SP103-SP",
+      "composition_raw": "92% POLYESTER（可降解）、8% SP",
+      "composition": {
+        "polyester": 92.0,
+        "spandex": 8.0
+      },
+      "weave": "100D+40D*100D+40D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "55/56英寸",
+      "width_cm": 141.0,
+      "weight_gsm": 142,
+      "price_rmb_per_m": 15.2,
+      "applications": [
+        "裤料",
+        "外套",
+        "衬衫"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 5
+    },
+    {
+      "id": "03e06083fe4b",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "菱形格",
+      "code": "ZT24-SP137-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "75D*75DT8+150D DTY",
+      "structure": "DOBBY（小提花，菱形格纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 144,
+      "price_rmb_per_m": 17.4,
+      "applications": [
+        "外套",
+        "裤料",
+        "棉衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 6
+    },
+    {
+      "id": "d8bd12087c61",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "弹力酷丝棉",
+      "code": "ZT24-SP033-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "127×91/40S*40S",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 174,
+      "price_rmb_per_m": 12.6,
+      "applications": [
+        "裤料",
+        "外套",
+        "夹克"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 7
+    },
+    {
+      "id": "a94ab229017d",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "尼龙双层变斜四面弹",
+      "code": "ZT24-NL007-NL",
+      "composition_raw": "88% NYLON、12% SP",
+      "composition": {
+        "nylon": 88.0,
+        "spandex": 12.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "PLAIN（平纹，双层变斜纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "58/59英寸",
+      "width_cm": 148.6,
+      "weight_gsm": 221,
+      "price_rmb_per_m": 29,
+      "applications": [
+        "裤料",
+        "西装套装"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 8
+    },
+    {
+      "id": "cf2f32d2f95c",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "消光斜纹尼龙长丝四面弹",
+      "code": "ZT24-NL009-NL",
+      "composition_raw": "87% NYLON、13% SP",
+      "composition": {
+        "nylon": 87.0,
+        "spandex": 13.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "TWILL 2/1（2/1斜纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 146,
+      "price_rmb_per_m": 22.2,
+      "applications": [
+        "裤料"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 9
+    },
+    {
+      "id": "b493d2c6c3e2",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "面包格",
+      "code": "ZT24-SP146-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "50D*50DT8+50D",
+      "structure": "DOBBY（小提花，面包格纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 124,
+      "price_rmb_per_m": 14.2,
+      "applications": [
+        "棉衣",
+        "外套",
+        "衬衫"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 10
+    },
+    {
+      "id": "02470a4b46c8",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "空变链条格",
+      "code": "ZT24-SP026-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "90D*75DT8+150D",
+      "structure": "DOBBY（小提花，链条格纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 129,
+      "price_rmb_per_m": 12.9,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 11
+    },
+    {
+      "id": "94f85ee82832",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "尼龙加捻四面弹",
+      "code": "ZT24-NL004-01",
+      "composition_raw": "90% NYLON、10% SP",
+      "composition": {
+        "nylon": 90.0,
+        "spandex": 10.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "58/59英寸",
+      "width_cm": 148.6,
+      "weight_gsm": 142,
+      "price_rmb_per_m": 14.9,
+      "applications": [
+        "裤料",
+        "外套",
+        "衬衫"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 12
+    },
+    {
+      "id": "8b0ffba3d8c4",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "消光斜纹四面弹（骑兵斜）",
+      "code": "ZT24-SP010-SP",
+      "composition_raw": "88% POLYESTER、12% SP",
+      "composition": {
+        "polyester": 88.0,
+        "spandex": 12.0
+      },
+      "weave": "75D+40D*75D+40D",
+      "structure": "骑兵斜（斜纹的一种，纹理细腻且具备方向性）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 160,
+      "price_rmb_per_m": 14.8,
+      "applications": [
+        "裤料",
+        "外套",
+        "夹克"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 13
+    },
+    {
+      "id": "4e9d28bb0196",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "200D格子四面弹",
+      "code": "ZT24-SP007-SP",
+      "composition_raw": "95% POLYESTER、5% SP",
+      "composition": {
+        "polyester": 95.0,
+        "spandex": 5.0
+      },
+      "weave": "200D+40D*200D+40D",
+      "structure": "RIP-STOP（防撕裂格纹）",
+      "finish": "P/D（染色后处理）+飘纱",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 262,
+      "price_rmb_per_m": 14.6,
+      "applications": [
+        "冲锋衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 14
+    },
+    {
+      "id": "5c8c615bdc75",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "消光超高弹四面弹",
+      "code": "ZT24-0X008-0X",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "75D+75D*75D+75D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）+3K*5K",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 202,
+      "price_rmb_per_m": 17.6,
+      "applications": [
+        "冲锋衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 15
+    },
+    {
+      "id": "2b71eea57dd8",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "可降解真记忆",
+      "code": "ZT24-ME001-ME",
+      "composition_raw": "100% POLYESTER（可降解）",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "0.0x0.0x57/58/75D*75D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 110,
+      "price_rmb_per_m": 30.8,
+      "applications": [
+        "外套",
+        "夹克"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 16
+    },
+    {
+      "id": "91d5eefaba91",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "加密消光牛津布",
+      "code": "ZT24-0X003-0X",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "150D*150D/2",
+      "structure": "PLAIN（平纹，加密牛津布结构）",
+      "finish": "P/D（染色后处理）+白膜",
+      "spec_raw": "58/59英寸",
+      "width_cm": 148.6,
+      "weight_gsm": 173,
+      "price_rmb_per_m": 10.7,
+      "applications": [
+        "冲锋衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 17
+    },
+    {
+      "id": "1189d4dab60e",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "可降解加密锦涤缎桃",
+      "code": "ZT24-PK001-PK",
+      "composition_raw": "92% POLYESTER（可降解）、8% NYLON",
+      "composition": {
+        "polyester": 92.0,
+        "nylon": 8.0
+      },
+      "weave": "75D*160D",
+      "structure": "PLAIN（平纹，缎桃纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 145,
+      "price_rmb_per_m": 10.6,
+      "applications": [
+        "棉衣",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 18
+    },
+    {
+      "id": "c7a2fded8844",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "420T涤丝纺",
+      "code": "ZT24-PT001-PT",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "25D*25D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 50,
+      "price_rmb_per_m": 12.6,
+      "applications": [
+        "棉衣",
+        "羽绒服"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 19
+    },
+    {
+      "id": "69063db7156d",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "斜纹呢",
+      "code": "ZT24-0X006-0X",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "122×89/150D*150D",
+      "structure": "TWILL 2/2（2/2斜纹）",
+      "finish": "P/D（染色后处理）+高透白0.02彩膜",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 202,
+      "price_rmb_per_m": 15.9,
+      "applications": [
+        "冲锋衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 20
+    },
+    {
+      "id": "643e151a26f5",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "氨耐格",
+      "code": "ZT24-NI.023-NI",
+      "composition_raw": "85% NYLON、15% SP",
+      "composition": {
+        "nylon": 85.0,
+        "spandex": 15.0
+      },
+      "weave": "228×147/30D+20D*35D+20D",
+      "structure": "RIP-STOP（防撕裂格纹）",
+      "finish": "P/D（染色后处理）+纱线抗UV",
+      "spec_raw": "56/57英寸",
+      "width_cm": 143.5,
+      "weight_gsm": 98,
+      "price_rmb_per_m": 21.8,
+      "applications": [
+        "皮肤衣",
+        "防晒衣"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 21
+    },
+    {
+      "id": "43d5eac1c7c8",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "涤锦四面弹",
+      "code": "ZT24-SP001-SP",
+      "composition_raw": "80% POLYESTER、20% NYLON",
+      "composition": {
+        "polyester": 80.0,
+        "nylon": 20.0
+      },
+      "weave": "75D+40D*75D+40D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 156,
+      "price_rmb_per_m": 16.7,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 22
+    },
+    {
+      "id": "35f44324a2f7",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "提花格子",
+      "code": "ZT24-SP045-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "100D*100DT8+150D",
+      "structure": "DOBBY（小提花，格子纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 136,
+      "price_rmb_per_m": 12.4,
+      "applications": [
+        "裤料",
+        "外套",
+        "衬衫"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 23
+    },
+    {
+      "id": "5c8fde0f5a3e",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "高弹尼龙平纹",
+      "code": "ZT24-NL021-NL",
+      "composition_raw": "95% NYLON、5% SP",
+      "composition": {
+        "nylon": 95.0,
+        "spandex": 5.0
+      },
+      "weave": "50D+20D*50D+20D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 92,
+      "price_rmb_per_m": 19.8,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 24
+    },
+    {
+      "id": "dcadb4d5a67b",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "磨毛四面弹",
+      "code": "ZT24-SP068-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "150D+40D*150D+40D",
+      "structure": "PLAIN（平纹，磨毛处理）",
+      "finish": "P/D（染色后处理）+磨毛",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 188,
+      "price_rmb_per_m": 14.6,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 25
+    },
+    {
+      "id": "5692bb6d256f",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "防泼水尼龙四面弹",
+      "code": "ZT24-NL035-NL",
+      "composition_raw": "90% NYLON、10% SP",
+      "composition": {
+        "nylon": 90.0,
+        "spandex": 10.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "PLAIN（平纹）",
+      "finish": "P/D（染色后处理）+防泼水",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 148,
+      "price_rmb_per_m": 16.5,
+      "applications": [
+        "裤料",
+        "外套"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 26
+    },
+    {
+      "id": "e5af1511b0b0",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "蜂巢格",
+      "code": "ZT24-SP089-SP",
+      "composition_raw": "100% POLYESTER",
+      "composition": {
+        "polyester": 100.0
+      },
+      "weave": "75D*75DT8+100D",
+      "structure": "DOBBY（小提花，蜂巢纹理）",
+      "finish": "P/D（染色后处理）",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 128,
+      "price_rmb_per_m": 13.6,
+      "applications": [
+        "裤料",
+        "套装"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 27
+    },
+    {
+      "id": "4ed5eefc54a2",
+      "supplier": "中涛三时",
+      "category": "woven",
+      "name": "抗静电尼龙斜纹",
+      "code": "ZT24-NL056-NL",
+      "composition_raw": "85% NYLON、15% SP",
+      "composition": {
+        "nylon": 85.0,
+        "spandex": 15.0
+      },
+      "weave": "70D+40D*70D+40D",
+      "structure": "TWILL 3/1（3/1斜纹）",
+      "finish": "P/D（染色后处理）+抗静电",
+      "spec_raw": "57/58英寸",
+      "width_cm": 146.1,
+      "weight_gsm": 152,
+      "price_rmb_per_m": 17.9,
+      "applications": [
+        "裤料",
+        "套装",
+        "夹克"
+      ],
+      "tags": [],
+      "source_file": "面料推荐档案\\面料推荐\\中涛 三时.xlsx",
+      "source_row": 28
+    },
+    {
+      "id": "0a73ab0e9b70",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "编织纹 PU",
+      "code": "1",
+      "texture": "立体交叉藤编编织纹",
+      "color": "哑光纯黑",
+      "tags": [
+        "立体交叉藤编编织纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 2
+    },
+    {
+      "id": "a9a13097e418",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "S 型冲孔透气 PU",
+      "code": "2",
+      "texture": "S 形错位镂空打孔",
+      "color": "炭灰黑",
+      "tags": [
+        "S 形错位镂空打孔"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 3
+    },
+    {
+      "id": "d2b2e0804abf",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "细条仿麂 PU",
+      "code": "3",
+      "texture": "等距平行细沟槽横纹",
+      "color": "浅咖卡其纯色",
+      "tags": [
+        "等距平行细沟槽横纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 4
+    },
+    {
+      "id": "41ff5deccae6",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "素面超纤麂皮",
+      "code": "4",
+      "texture": "平整无纹路短绒麂面",
+      "color": "浅驼咖，反面宝蓝色底布",
+      "tags": [
+        "平整无纹路短绒麂面"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 5
+    },
+    {
+      "id": "0949dfc77480",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "十字星压纹 PU",
+      "code": "5",
+      "texture": "规律十字星凹凸压点",
+      "color": "炭灰面 + 亮黄针织底布",
+      "tags": [
+        "规律十字星凹凸压点"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 6
+    },
+    {
+      "id": "c3cbf9c27d8b",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "绳绣树叶麂皮",
+      "code": "6",
+      "texture": "立体粗绳刺绣枝叶纹",
+      "color": "驼棕底 + 黑绣线，反面杂灰底",
+      "tags": [
+        "立体粗绳刺绣枝叶纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 7
+    },
+    {
+      "id": "7510bc5047f0",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "龟裂碎石纹 PU",
+      "code": "7",
+      "texture": "不规则多边仿古龟裂纹",
+      "color": "哑光深炭灰纯色",
+      "tags": [
+        "不规则多边仿古龟裂纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 8
+    },
+    {
+      "id": "64d27e47c39c",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "水珠凸点 PU",
+      "code": "8",
+      "texture": "不规则立体半圆水珠凸粒",
+      "color": "豆沙粉纯色",
+      "tags": [
+        "不规则立体半圆水珠凸粒"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 9
+    },
+    {
+      "id": "43306e99ef91",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "复古碎花印花 PU",
+      "code": "9",
+      "texture": "满版藤蔓小碎花数码印花",
+      "color": "酒红棕底 + 紫 / 蓝 / 米花色",
+      "tags": [
+        "满版藤蔓小碎花数码印花"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 10
+    },
+    {
+      "id": "0be4606cafbd",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "菱形仿编 PU",
+      "code": "10",
+      "texture": "斜向规整凹凸菱形格纹",
+      "color": "哑光米白纯色",
+      "tags": [
+        "斜向规整凹凸菱形格纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 11
+    },
+    {
+      "id": "31c606e1b27c",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "细密小荔枝纹 PU",
+      "code": "11",
+      "texture": "均匀细密小圆荔枝颗粒",
+      "color": "灰咖哑光纯色",
+      "tags": [
+        "均匀细密小圆荔枝颗粒"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 12
+    },
+    {
+      "id": "2d9f9816f478",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "黑底擦金爆裂油皮",
+      "code": "12",
+      "texture": "大面积不规则自然龟裂裂纹",
+      "color": "黑底 + 鎏金擦色",
+      "tags": [
+        "大面积不规则自然龟裂裂纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 13
+    },
+    {
+      "id": "616cbd2c209b",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "酒红抓皱擦金油皮",
+      "code": "13",
+      "texture": "不规则手工抓皱交错细纹",
+      "color": "酒红 + 浅金擦色，黑无纺底",
+      "tags": [
+        "不规则手工抓皱交错细纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 14
+    },
+    {
+      "id": "fd35aa3e914e",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "渐变蛇鳞纹 PU",
+      "code": "14",
+      "texture": "圆弧连片鱼鳞蛇鳞凹凸纹",
+      "color": "棕红渐变，黑针织弹力底",
+      "tags": [
+        "圆弧连片鱼鳞蛇鳞凹凸纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 15
+    },
+    {
+      "id": "331446cddd03",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "黑擦金竹节大鳄鱼纹",
+      "code": "15",
+      "texture": "分段竹节大鳄鱼肚皮鳞纹",
+      "color": "黑底 + 灰金擦色，黑无纺底",
+      "tags": [
+        "分段竹节大鳄鱼肚皮鳞纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 16
+    },
+    {
+      "id": "17d20a7d9032",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "竖条镜面拉丝 PU",
+      "code": "16",
+      "texture": "平行凹凸亮面拉丝竖条纹",
+      "color": "深灰亮面纯色",
+      "tags": [
+        "平行凹凸亮面拉丝竖条纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 17
+    },
+    {
+      "id": "85590d9eb49f",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "双色棋盘格 PU",
+      "code": "17",
+      "texture": "规整正方撞色棋盘格压纹",
+      "color": "深咖 + 浅米咖，米白织布底",
+      "tags": [
+        "规整正方撞色棋盘格压纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 18
+    },
+    {
+      "id": "bee72d31d59f",
+      "supplier": "万泰",
+      "category": "pu_suede",
+      "name": "灰调细碎小蛇纹",
+      "code": "18",
+      "texture": "细密错落渐变小蛇鳞凹凸纹",
+      "color": "灰系渐变，黑弹力针织底",
+      "tags": [
+        "细密错落渐变小蛇鳞凹凸纹"
+      ],
+      "source_file": "面料推荐档案\\面料推荐\\万泰推荐面料.xlsx",
+      "source_row": 19
+    },
+    {
+      "id": "cb1143bddfa3",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "Sandwich FR PFPF both sides",
+      "code": "7",
+      "composition_raw": "57% PES / 3% Acrylic, 320gsm, white",
+      "composition": {
+        "polyester": 57.0,
+        "acrylic": 3.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 2
+    },
+    {
+      "id": "bd9c06e11ae0",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "Sandwich  FARO FR PFPF both sides",
+      "code": "6",
+      "composition_raw": "50% Polyester / 50% Acrylic coating, 370gsm, white",
+      "composition": {
+        "polyester": 50.0,
+        "acrylic": 50.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 3
+    },
+    {
+      "id": "6e6f805ed048",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "8948 FR",
+      "code": "4",
+      "composition_raw": "100% PES linen like, 136gsm",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 4
+    },
+    {
+      "id": "a411fb509504",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "SENA FR",
+      "code": "8",
+      "composition_raw": "100% PES, 120gsm, bone white",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 5
+    },
+    {
+      "id": "6d9c31506fe4",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "Cerdena 323 FR",
+      "code": "9",
+      "composition_raw": "100% PES, 113gsm, bone white",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 6
+    },
+    {
+      "id": "4be06738fadb",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "Jucar FR 16736",
+      "code": "5",
+      "composition_raw": "100% PES , 355gsm",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": "EN13773, Class I",
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 7
+    },
+    {
+      "id": "ed855c7d3731",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "Jucar 16635",
+      "code": "3",
+      "composition_raw": "100% PES, weight 355gsm",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": null,
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 8
+    },
+    {
+      "id": "3ab797904adf",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "KYRIOS 09",
+      "code": "2",
+      "composition_raw": "100% PES, 290gsm",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": null,
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 9
+    },
+    {
+      "id": "768a3a68c05b",
+      "supplier": "杭州辦事處",
+      "category": "home_textile",
+      "name": "PERONI 06",
+      "code": "1",
+      "composition_raw": "100% PES, 290gsm",
+      "composition": {
+        "polyester": 100.0
+      },
+      "flame_retardant": true,
+      "fr_standard": null,
+      "edge": "熱切邊",
+      "spec_raw": "280cm",
+      "width_cm": 280.0,
+      "moq": null,
+      "fob_usd_per_m": null,
+      "source_file": "面料推荐档案\\家纺\\260407 收到面料.xlsx",
+      "source_row": 10
+    },
+    {
+      "id": "363aeb5bfc61",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "粘胶复合烫印面料",
+      "code": "1",
+      "composition_raw": "49%粘胶纤维48%聚酯3%弹性纤维",
+      "composition": {
+        "rayon": 49.0,
+        "polyester": 48.0,
+        "spandex": 3.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 190.0,
+      "weight_range": {
+        "min": 180,
+        "max": 200
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "32",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "30",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "31",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "29",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "33",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 5
+    },
+    {
+      "id": "ce2a22f4d3f1",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "Modal面料T恤面料",
+      "code": "2",
+      "composition_raw": "79%莫代尔21%涤纶",
+      "composition": {
+        "modal": 79.0,
+        "polyester": 21.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 170.0,
+      "weight_range": {
+        "min": 160,
+        "max": 180
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "40",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "38",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "42",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "39",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "37",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "41",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "36",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 12
+    },
+    {
+      "id": "a5709cbaec39",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "互锁柔软面料",
+      "code": "3",
+      "composition_raw": "涤纶粘胶混纺",
+      "composition": {},
+      "spec_raw": "150cm",
+      "weight_gsm": 180.0,
+      "weight_range": {
+        "min": 170,
+        "max": 190
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "22",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 19
+    },
+    {
+      "id": "11c91da7ae7f",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "透气防汗T恤面料",
+      "code": "4",
+      "composition_raw": "50%莫达尔50%棉",
+      "composition": {
+        "modal": 50.0,
+        "cotton": 50.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 170.0,
+      "weight_range": {
+        "min": 160,
+        "max": 180
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "29",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "30",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "31",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 26
+    },
+    {
+      "id": "d0476ec8144c",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "粘胶混纺面料",
+      "code": "5",
+      "composition_raw": "49%人棉48%涤纶3%氨纶",
+      "composition": {
+        "rayon": 49.0,
+        "polyester": 48.0,
+        "spandex": 3.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 180.0,
+      "weight_range": {
+        "min": 170,
+        "max": 190
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "22",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "21",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "20",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 33
+    },
+    {
+      "id": "9b4f730e7218",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "反光文字细节面料",
+      "code": "6",
+      "composition_raw": "49%聚酯46%粘胶纤维5%弹性烷",
+      "composition": {
+        "polyester": 49.0,
+        "rayon": 46.0,
+        "spandex": 5.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 190.0,
+      "weight_range": {
+        "min": 180,
+        "max": 200
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "29",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "30",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 40
+    },
+    {
+      "id": "a82446c6add6",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "Appé领亚麻混纺面料",
+      "code": "7",
+      "composition_raw": "棉+亚麻混纺",
+      "composition": {},
+      "spec_raw": "140cm",
+      "weight_gsm": 160.0,
+      "weight_range": {
+        "min": 150,
+        "max": 170
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "35",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "33",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "34",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "36",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "32",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "31",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "37",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 47
+    },
+    {
+      "id": "0e99f5e65258",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "网眼针织布",
+      "code": "8",
+      "composition_raw": "50%棉50%涤",
+      "composition": {
+        "cotton": 50.0,
+        "涤": 50.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 150.0,
+      "weight_range": {
+        "min": 140,
+        "max": 160
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "21",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "20",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "19",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "22",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "18",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 54
+    },
+    {
+      "id": "eef5f1dbc1aa",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "美国Pique纯棉面料",
+      "code": "9",
+      "composition_raw": "100%纯棉",
+      "composition": {
+        "纯棉": 100.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 190.0,
+      "weight_range": {
+        "min": 180,
+        "max": 200
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "30",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "32",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "31",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "29",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "33",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "34",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 61
+    },
+    {
+      "id": "a641e2c34997",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "珠地网眼Polo面料",
+      "code": "10",
+      "composition_raw": "纯棉珠地网眼",
+      "composition": {},
+      "spec_raw": "150cm",
+      "weight_gsm": 200.0,
+      "weight_range": {
+        "min": 190,
+        "max": 210
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "33",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "31",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "32",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "34",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "30",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "35",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "36",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 68
+    },
+    {
+      "id": "1da5097e3368",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "弹力提花Polo面料",
+      "code": "11",
+      "composition_raw": "89%聚酯11%氨纶",
+      "composition": {
+        "polyester": 89.0,
+        "spandex": 11.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 210.0,
+      "weight_range": {
+        "min": 200,
+        "max": 220
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "29",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 75
+    },
+    {
+      "id": "1e76cbd5c842",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "三扣Polo面料",
+      "code": "12",
+      "composition_raw": "62%棉38%涤",
+      "composition": {
+        "cotton": 62.0,
+        "涤": 38.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 190.0,
+      "weight_range": {
+        "min": 180,
+        "max": 200
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "22",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "26",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "27",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "28",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 82
+    },
+    {
+      "id": "d281d828985f",
+      "supplier_brand": "3S-AVVA",
+      "category": "knit",
+      "name": "弹力提花针织面料",
+      "code": "13",
+      "composition_raw": "88%涤纶12%氨纶",
+      "composition": {
+        "polyester": 88.0,
+        "spandex": 12.0
+      },
+      "spec_raw": "150cm",
+      "weight_gsm": 190.0,
+      "weight_range": {
+        "min": 180,
+        "max": 200
+      },
+      "supplier_quotes": [
+        {
+          "supplier": "绍兴宇翔布料有限公司",
+          "price_rmb_per_m": "22",
+          "moq": "300米",
+          "phone": "0575-84785236",
+          "email": "yuxiang@yxcl.com"
+        },
+        {
+          "supplier": "河北锦锦纺织科技有限公司",
+          "price_rmb_per_m": "21",
+          "moq": "300米",
+          "phone": "0315-5123456",
+          "email": "jjtex@jjtech.com"
+        },
+        {
+          "supplier": "吴江朝代纺织有限公司",
+          "price_rmb_per_m": "23",
+          "moq": "300米",
+          "phone": "0512-63456789",
+          "email": "chaodai@cdtex.com"
+        },
+        {
+          "supplier": "绍兴金典进出口有限公司",
+          "price_rmb_per_m": "24",
+          "moq": "300米",
+          "phone": "0575-89976178",
+          "email": "info@sxjdfz.com"
+        },
+        {
+          "supplier": "广州裕顺纺织有限公司",
+          "price_rmb_per_m": "20",
+          "moq": "300米",
+          "phone": "020-12345678",
+          "email": "yushun@ys.com"
+        },
+        {
+          "supplier": "四川金阁针织有限公司",
+          "price_rmb_per_m": "19",
+          "moq": "300米",
+          "phone": "028-87654321",
+          "email": "jinge@jinge.com"
+        },
+        {
+          "supplier": "绍兴泰定石墨烯科技有限公司",
+          "price_rmb_per_m": "25",
+          "moq": "300米",
+          "phone": "0575-88888888",
+          "email": "taiding@tdtech.com"
+        }
+      ],
+      "source_file": "面料推荐档案\\家纺\\3S-AVVA_针织面料报价单_多供应商版_新增网址.xlsx",
+      "source_row_first": 89
+    }
+  ]
+}
