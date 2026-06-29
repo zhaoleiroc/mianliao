@@ -32,3 +32,6 @@ pnpm-debug.log*
 *.tsbuildinfo
 vite.config.d.ts
 vite.config.js
+
+# Cloudflare Pages one-off deploy bundles
+_deploy_bundle.zip

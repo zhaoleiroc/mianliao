@@ -1,10 +1,26 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Use BASE_URL env var to override the project-page path. Defaults to
-// "/mianliao/" for production builds (GitHub Pages project page) and "/"
-// for dev/preview so the local server works at the root.
-const BASE = process.env.BASE_URL ?? (process.env.NODE_ENV === "production" ? "/mianliao/" : "/");
+// Pick the base URL for emitted <script>/<link href> tags.
+//
+//   BASE_URL=/some/path/        → explicit override (highest priority).
+//                                  Use this on GitHub Actions where the
+//                                  path is "/mianliao/".
+//   DEPLOY_CLOUDFLARE=1          → root ("/"). The site is served at
+//                                  <project>.pages.dev, no prefix needed.
+//   nothing set, production      → "/mianliao/"  (GitHub Pages project
+//                                  page is the canonical default).
+//   nothing set, dev / preview   → "/"           (local server works at
+//                                  root).
+const env = process.env;
+const explicitBase = env.BASE_URL && env.BASE_URL.length > 0 ? env.BASE_URL : null;
+const inferredBase =
+  env.DEPLOY_CLOUDFLARE === "1"
+    ? "/"
+    : env.NODE_ENV === "production"
+      ? "/mianliao/"
+      : "/";
+const BASE = explicitBase ?? inferredBase;
 
 export default defineConfig({
   plugins: [react()],
