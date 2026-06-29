@@ -14,4 +14,10 @@
   html {
     scrollbar-gutter: stable;
   }
+  /* Honour EXIF orientation tag for any future image that has it set.
+   * Most of our fabric photos are pre-stripped / pre-rotated; this is
+   * just defensive against the next one we add. */
+  img {
+    image-orientation: from-image;
+  }
 }
