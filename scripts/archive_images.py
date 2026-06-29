@@ -90,30 +90,69 @@ def short_hash(path: Path) -> str:
 # Pairing images with fabric ids (best-effort heuristics)
 # ---------------------------------------------------------------------------
 def match_fabrics(images: list[dict], fabrics: list[dict]) -> None:
-    """Annotate each image dict in place with a best-effort fabric_id match."""
+    """Annotate each image dict in place with a best-effort fabric_id match.
+
+    Strategy:
+      * home_textile JPGs are paired by sorted filename position against the
+        numeric `code` column in fabrics.json (the source Excel row order).
+      * Every other (category, supplier) bucket gets a deterministic
+        round-robin distribution over its fabrics, sorted by source_row.
+        This is a heuristic — images are not visually matched — but it
+        guarantees every archived image is reachable from the site, and
+        every fabric in a populated bucket shows at least one photo.
+    """
     by_seq: dict[tuple[str, int], dict] = {}
     for f in fabrics:
-        seq = None
         if f.get("code") and str(f["code"]).isdigit():
-            seq = int(f["code"])
-            by_seq[(f["category"], seq)] = f
-    for img in images:
-        if img["category_hint"] == "home_textile":
-            # Sequence in the 9 JPG names is opaque; pair by alphabetical sort.
-            order = sorted(
-                [i for i in images if i["category_hint"] == "home_textile"],
-                key=lambda x: x["original_filename"],
-            )
-            for idx, it in enumerate(order, start=1):
-                if it["original_filename"] == img["original_filename"]:
-                    target = by_seq.get(("home_textile", idx))
-                    if target:
-                        img["matched_fabric_id"] = target["id"]
-                        img["matched_fabric_name"] = target["name"]
-                    break
+            by_seq[(f["category"], int(f["code"]))] = f
+
+    # home_textile: sequence match (high confidence when code is numeric)
+    order_ht = sorted(
+        [i for i in images if i["category_hint"] == "home_textile"],
+        key=lambda x: x["original_filename"],
+    )
+    for idx, it in enumerate(order_ht, start=1):
+        target = by_seq.get(("home_textile", idx))
+        if target:
+            it["matched_fabric_id"] = target["id"]
+            it["matched_fabric_name"] = target["name"]
         else:
-            img["matched_fabric_id"] = None
-            img["matched_fabric_name"] = None
+            it["matched_fabric_id"] = None
+            it["matched_fabric_name"] = None
+
+    # other buckets: round-robin within (category, supplier)
+    other_imgs = [i for i in images if i["category_hint"] != "home_textile"]
+    buckets: dict[tuple[str, str], list[dict]] = {}
+    for img in other_imgs:
+        key = (img["category_hint"], img["supplier_hint"])
+        buckets.setdefault(key, []).append(img)
+    for (cat, sup), bucket_imgs in buckets.items():
+        bucket_imgs.sort(key=lambda x: x["original_filename"])
+        sup_fabrics = sorted(
+            [f for f in fabrics if f.get("category") == cat and f.get("supplier")],
+            key=lambda f: (f.get("source_row") or 0),
+        )
+        # Map archive supplier_slug -> a substring of the Chinese supplier
+        # name in fabrics.json. Extending this map is how you teach the
+        # archiver about a new supplier with images.
+        SLUG_TO_SUPPLIER_SUBSTR: dict[str, str] = {
+            "huarui":   "华瑞",
+            "wantai":   "万泰",
+            "zhongtao": "中涛",
+            "3savva":   "3S",
+        }
+        substr = SLUG_TO_SUPPLIER_SUBSTR.get(sup, "")
+        if substr:
+            sup_fabrics = [f for f in sup_fabrics if substr in (f.get("supplier") or "")]
+        if not sup_fabrics:
+            for it in bucket_imgs:
+                it["matched_fabric_id"] = None
+                it["matched_fabric_name"] = None
+            continue
+        for pos, it in enumerate(bucket_imgs):
+            target = sup_fabrics[pos % len(sup_fabrics)]
+            it["matched_fabric_id"] = target["id"]
+            it["matched_fabric_name"] = target["name"]
 
 
 # ---------------------------------------------------------------------------
@@ -217,3 +256,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+

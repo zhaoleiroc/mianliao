@@ -1,156 +1,182 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Flame, ShieldCheck, Sparkles } from "lucide-react";
-import { fabrics, fabricMeta } from "../data";
-import { CATEGORY_LABEL, CATEGORY_DESC, type Category } from "../types";
-import FabricCard from "../components/FabricCard";
+import { useMemo, useState } from "react";
+import { fabrics, fabricImage } from "../data";
+import {
+  CATEGORY_LABEL,
+  FIBER_LABEL,
+  type Category,
+  type Fabric,
+} from "../types";
 
-const CATEGORY_ORDER: Category[] = ["knit", "woven", "pu_suede", "home_textile"];
+const CATS: Category[] = ["knit", "woven", "pu_suede", "home_textile"];
+
+function priceValue(
+  p: number | string | null | undefined,
+): number | null {
+  if (p == null) return null;
+  const n = typeof p === "number" ? p : parseFloat(String(p));
+  return Number.isFinite(n) ? n : null;
+}
+
+function compositionText(f: Fabric): string | null {
+  const entries = Object.entries(f.composition ?? {}).slice(0, 3);
+  if (entries.length === 0) return null;
+  return entries
+    .map(
+      ([k, v]) =>
+        (FIBER_LABEL[k] ?? k) + (v ? " " + Math.round(v) + "%" : ""),
+    )
+    .join(" · ");
+}
 
 export default function Home() {
-  const featured = fabrics
-    .filter((f) => f.supplier_quotes && f.supplier_quotes.length > 0)
-    .slice(0, 4);
+  const [q, setQ] = useState("");
+  const [cat, setCat] = useState<"all" | Category>("all");
 
-  const supplierCount = new Set<string>();
-  for (const f of fabrics) {
-    for (const q of f.supplier_quotes ?? []) {
-      if (q.supplier) supplierCount.add(q.supplier);
-    }
-  }
+  const counts = useMemo(() => {
+    const m: Record<string, number> = { all: fabrics.length };
+    for (const c of CATS) m[c] = 0;
+    for (const f of fabrics) m[f.category] = (m[f.category] ?? 0) + 1;
+    return m;
+  }, []);
 
-  const fibers = (() => {
-    const m = new Map<string, number>();
-    for (const f of fabrics) {
-      for (const k of Object.keys(f.composition ?? {})) {
-        m.set(k, (m.get(k) ?? 0) + 1);
-      }
-    }
-    const labelOf = (k: string) => {
-      const map: Record<string, string> = {
-        polyester: "涤纶",
-        recycled_polyester: "再生涤",
-        cotton: "棉",
-        nylon: "锦纶",
-        spandex: "氨纶",
-        modal: "莫代尔",
-        rayon: "粘胶",
-        linen: "亚麻",
-        acrylic: "腈纶",
-      };
-      return map[k] ?? k;
-    };
-    return Array.from(m.entries())
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 8)
-      .map(([k, n]) => ({ key: k, label: labelOf(k), count: n }));
-  })();
-
-  const categoryCount = (c: Category) => fabrics.filter((f) => f.category === c).length;
+  const list = useMemo(() => {
+    const ql = q.trim().toLowerCase();
+    return fabrics.filter((f) => {
+      if (cat !== "all" && f.category !== cat) return false;
+      if (!ql) return true;
+      const hay =
+        (f.name ?? "") +
+        " " +
+        (f.code ?? "") +
+        " " +
+        (f.supplier ?? "") +
+        " " +
+        (f.supplier_brand ?? "") +
+        " " +
+        (f.composition_raw ?? "") +
+        " " +
+        (f.features ?? []).join(" ") +
+        " " +
+        (f.applications ?? []).join(" ");
+      return hay.toLowerCase().includes(ql);
+    });
+  }, [q, cat]);
 
   return (
-    <>
-      <section className="container-page pt-16 pb-12 sm:pt-24 sm:pb-20">
-        <div className="grid items-end gap-8 md:grid-cols-[1.2fr_1fr]">
-          <div>
-            <div className="label">Fabric Atlas · 面料图鉴</div>
-            <h1 className="display mt-3 text-ink">
-              把每一块面料
-              <br />
-              <span className="italic text-accent">都讲清楚。</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-stone-600 leading-relaxed">
-              一个私人选品库，覆盖 {fabricMeta.total} 款针织、化纤、PU 与家纺阻燃面料；
-              来自 {Object.keys(fabricMeta.counts).length} 个数据源、{supplierCount.size} 家供应商的报价对比。
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/fabrics" className="btn-primary">
-                浏览面料库 <ArrowRight size={14} />
-              </Link>
-              <Link to="/compare" className="btn-ghost">
-                查看报价对比
-              </Link>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-3">
-            {CATEGORY_ORDER.map((c) => (
-              <Link
-                key={c}
-                to={`/fabrics?category=${c}`}
-                className="surface group p-5 transition hover:-translate-y-0.5"
-              >
-                <div className="label">{CATEGORY_LABEL[c]}</div>
-                <div className="mt-1 text-2xl font-serif text-ink">{categoryCount(c)}</div>
-                <div className="mt-1 text-xs text-stone-500">{CATEGORY_DESC[c]}</div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="container-page border-t border-stone-200/70 py-12">
-        <div className="grid gap-6 md:grid-cols-3">
-          {[
-            {
-              icon: ShieldCheck,
-              title: "规格透明",
-              body: "克重、幅宽、成分、阻燃标准、供应商联系方式一站可查。",
-            },
-            {
-              icon: Flame,
-              title: "多供应商比价",
-              body: "同一款 3S-AVVA 针织面料自动比 7 家供应商，差价直观可见。",
-            },
-            {
-              icon: Sparkles,
-              title: "可复用的清洗流水线",
-              body: "原始 Excel 改一遍即可重跑 scripts/extract_fabrics.py，全站自动更新。",
-            },
-          ].map((p) => (
-            <div key={p.title} className="flex gap-3">
-              <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-stone-200/60 text-ink">
-                <p.icon size={16} />
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-ink">{p.title}</h3>
-                <p className="mt-1 text-sm text-stone-600 leading-relaxed">{p.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="container-page py-12">
-        <div className="mb-6 flex items-end justify-between">
-          <div>
-            <div className="label">Featured</div>
-            <h2 className="mt-1 font-serif text-2xl text-ink">多供应商报价精选</h2>
-          </div>
-          <Link to="/compare" className="text-sm text-accent hover:text-accentHover">
-            全部 13 款 →
+    <div className="min-h-screen bg-white text-neutral-900">
+      <header className="sticky top-0 z-20 border-b border-neutral-200 bg-white">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-4">
+          <Link to="/" className="text-sm font-medium tracking-tight">
+            面料库
           </Link>
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="搜索名称 / 编号 / 成分"
+            className="w-56 border-b border-neutral-200 bg-transparent py-1 text-right text-sm placeholder:text-neutral-400 focus:border-neutral-900 focus:outline-none"
+          />
         </div>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((f) => (
-            <FabricCard key={f.id} fabric={f} />
-          ))}
-        </div>
-      </section>
+      </header>
 
-      <section className="container-page py-12">
-        <div className="label">Composition</div>
-        <h2 className="mt-1 mb-5 font-serif text-2xl text-ink">主要纤维分布</h2>
-        <div className="flex flex-wrap gap-2">
-          {fibers.map((f) => (
-            <Link
-              key={f.key}
-              to={`/fabrics?fiber=${f.key}`}
-              className="chip hover:border-ink hover:text-ink"
-            >
-              {f.label} <span className="text-stone-400">· {f.count}</span>
-            </Link>
+      <nav className="border-b border-neutral-200">
+        <div className="mx-auto flex max-w-6xl items-center gap-8 overflow-x-auto px-8">
+          <Chip active={cat === "all"} onClick={() => setCat("all")}>
+            全部 ({counts.all})
+          </Chip>
+          {CATS.map((c) => (
+            <Chip key={c} active={cat === c} onClick={() => setCat(c)}>
+              {CATEGORY_LABEL[c]} ({counts[c] ?? 0})
+            </Chip>
           ))}
         </div>
-      </section>
-    </>
+      </nav>
+
+      <main className="mx-auto max-w-6xl px-8 pb-24 pt-16">
+        {list.length === 0 ? (
+          <p className="text-sm text-neutral-500">没有匹配的面料。</p>
+        ) : (
+          <ul className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {list.map((f) => {
+              const img = fabricImage(f.id);
+              const comp = compositionText(f);
+              const price = priceValue(f.price_rmb_per_m);
+              const quoteCount = (f.supplier_quotes ?? []).length;
+              return (
+                <li key={f.id}>
+                  <Link to={`/fabric/${f.id}`} className="group block">
+                    <div className="aspect-square w-full overflow-hidden bg-neutral-100">
+                      {img ? (
+                        <img
+                          src={img.url}
+                          alt={img.alt}
+                          loading="lazy"
+                          className="h-full w-full object-cover transition duration-500 group-hover:opacity-90"
+                        />
+                      ) : (
+                        <div
+                          className="flex h-full w-full items-center justify-center"
+                          aria-hidden
+                        >
+                          <span className="block h-px w-8 bg-neutral-300" />
+                        </div>
+                      )}
+                    </div>
+                    <div className="mt-4 space-y-1.5">
+                      <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-neutral-400">
+                        {CATEGORY_LABEL[f.category]}
+                      </div>
+                      <div className="text-sm font-medium leading-snug text-neutral-900">
+                        {f.name}
+                      </div>
+                      {(comp || f.weight_gsm != null) && (
+                        <div className="text-xs text-neutral-500">
+                          {[comp, f.weight_gsm != null ? `${f.weight_gsm} g/㎡` : null]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </div>
+                      )}
+                      {price != null ? (
+                        <div className="pt-1 text-sm font-medium tabular-nums text-neutral-900">
+                          ¥{price}/m
+                        </div>
+                      ) : quoteCount > 0 ? (
+                        <div className="pt-1 text-xs text-neutral-500 tabular-nums">
+                          {quoteCount} 家报价
+                        </div>
+                      ) : null}
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </main>
+    </div>
+  );
+}
+
+function Chip({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={
+        "-mb-px whitespace-nowrap border-b py-3 text-xs tracking-wide transition " +
+        (active
+          ? "border-neutral-900 text-neutral-900"
+          : "border-transparent text-neutral-500 hover:text-neutral-700")
+      }
+    >
+      {children}
+    </button>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T17:37:24",
+  "generated_at": "2026-06-28T18:58:40",
   "schema_version": 1,
   "archive_root": "assets\\fabrics",
   "apply_mode": false,
@@ -143,8 +143,8 @@
       "size_bytes": 2000875,
       "sha1_8": "1c7e5ab4",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "9dd131d3de11",
+      "matched_fabric_name": "双面弹力摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -158,8 +158,8 @@
       "size_bytes": 2453186,
       "sha1_8": "98bcc11b",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "92fa986f5aa8",
+      "matched_fabric_name": "灯芯绒复合摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -173,8 +173,8 @@
       "size_bytes": 2853281,
       "sha1_8": "409b3680",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "ce364640cf78",
+      "matched_fabric_name": "RE氨纶摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -188,8 +188,8 @@
       "size_bytes": 2213075,
       "sha1_8": "d0527811",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "c8c89b991b67",
+      "matched_fabric_name": "提花罗纹",
       "copy_status": "plan (not copied)"
     },
     {
@@ -203,8 +203,8 @@
       "size_bytes": 3411171,
       "sha1_8": "2d188756",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "2b534155c859",
+      "matched_fabric_name": "印花氨纶网眼布",
       "copy_status": "plan (not copied)"
     },
     {
@@ -218,8 +218,8 @@
       "size_bytes": 3676735,
       "sha1_8": "a450317f",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "a35d27ef686a",
+      "matched_fabric_name": "氨纶云彩摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -233,8 +233,8 @@
       "size_bytes": 3088556,
       "sha1_8": "eeb02b99",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "ee3c9c309506",
+      "matched_fabric_name": "RE提花空气层",
       "copy_status": "plan (not copied)"
     },
     {
@@ -248,8 +248,8 @@
       "size_bytes": 3348089,
       "sha1_8": "fd215705",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "eaef10da8be1",
+      "matched_fabric_name": "楼梯布",
       "copy_status": "plan (not copied)"
     },
     {
@@ -263,8 +263,8 @@
       "size_bytes": 4097469,
       "sha1_8": "948d0b5e",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "d6c58a2c8991",
+      "matched_fabric_name": "雪尼尔粗细针",
       "copy_status": "plan (not copied)"
     },
     {
@@ -278,8 +278,8 @@
       "size_bytes": 2313833,
       "sha1_8": "ea34e50c",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "171e3462544a",
+      "matched_fabric_name": "粗针罗纹复合摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -293,8 +293,8 @@
       "size_bytes": 2816085,
       "sha1_8": "059b37cf",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "64802c62b1ab",
+      "matched_fabric_name": "人字纹提花布",
       "copy_status": "plan (not copied)"
     },
     {
@@ -308,8 +308,8 @@
       "size_bytes": 4968031,
       "sha1_8": "8002044d",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "9e45af91d87d",
+      "matched_fabric_name": "粗细针（红色款）",
       "copy_status": "plan (not copied)"
     },
     {
@@ -323,8 +323,8 @@
       "size_bytes": 3688900,
       "sha1_8": "c44754dd",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "6f471855ce8a",
+      "matched_fabric_name": "粗细针（橙色款）",
       "copy_status": "plan (not copied)"
     },
     {
@@ -338,8 +338,8 @@
       "size_bytes": 3800919,
       "sha1_8": "a162c1fb",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "7a5185259212",
+      "matched_fabric_name": "粗细针（全棉款）",
       "copy_status": "plan (not copied)"
     },
     {
@@ -353,8 +353,8 @@
       "size_bytes": 4236931,
       "sha1_8": "95297595",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "cb5457ae1912",
+      "matched_fabric_name": "双色一体绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -368,8 +368,8 @@
       "size_bytes": 3233563,
       "sha1_8": "199ac1ce",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "b50973cf40eb",
+      "matched_fabric_name": "彩条弹力棉毛布",
       "copy_status": "plan (not copied)"
     },
     {
@@ -383,8 +383,8 @@
       "size_bytes": 3063578,
       "sha1_8": "02bf87f1",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "d4961705066f",
+      "matched_fabric_name": "双面仿羊羔绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -398,8 +398,8 @@
       "size_bytes": 2737582,
       "sha1_8": "71b96599",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "9139bc8975e7",
+      "matched_fabric_name": "RE单面仿羊羔绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -413,8 +413,8 @@
       "size_bytes": 2266388,
       "sha1_8": "8be7a604",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "3bba82b4af67",
+      "matched_fabric_name": "氨纶方格摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -428,8 +428,8 @@
       "size_bytes": 2175810,
       "sha1_8": "add019cb",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "9dd131d3de11",
+      "matched_fabric_name": "双面弹力摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -443,8 +443,8 @@
       "size_bytes": 2791903,
       "sha1_8": "73a528b5",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "92fa986f5aa8",
+      "matched_fabric_name": "灯芯绒复合摇粒绒",
       "copy_status": "plan (not copied)"
     },
     {
@@ -458,8 +458,8 @@
       "size_bytes": 2518860,
       "sha1_8": "7bb86b0a",
       "needs_review": true,
-      "matched_fabric_id": null,
-      "matched_fabric_name": null,
+      "matched_fabric_id": "ce364640cf78",
+      "matched_fabric_name": "RE氨纶摇粒绒",
       "copy_status": "plan (not copied)"
     }
   ]

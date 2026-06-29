@@ -1,238 +1,343 @@
-import { useParams, Link } from "react-router-dom";
-import { Phone, Mail, Flame, ImageOff } from "lucide-react";
-import { fabrics, fabricImages, fabricImage } from "../data";
-import { CATEGORY_LABEL, FIBER_LABEL } from "../types";
-import BackButton from "../components/BackButton";
+import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
+import { fabrics, fabricImage, fabricImages } from "../data";
+import {
+  CATEGORY_LABEL,
+  FIBER_LABEL,
+  type Fabric,
+} from "../types";
 
-export default function FabricDetail() {
-  const { id } = useParams();
-  const fabric = fabrics.find((f) => f.id === id);
+function priceValue(
+  p: number | string | null | undefined,
+): number | null {
+  if (p == null) return null;
+  const n = typeof p === "number" ? p : parseFloat(String(p));
+  return Number.isFinite(n) ? n : null;
+}
 
-  if (!fabric) {
-    return (
-      <div className="container-page py-20 text-center">
-        <h1 className="font-serif text-2xl text-ink">未找到该面料</h1>
-        <BackButton to="/fabrics" label="返回面料库" />
-      </div>
-    );
-  }
+function moneyText(
+  p: number | string | null | undefined,
+  prefix = "¥",
+): string | null {
+  const v = priceValue(p);
+  return v == null ? null : `${prefix}${v}`;
+}
 
-  const imgs = fabricImages(fabric.id);
-  const mainImg = imgs[0] ?? fabricImage(fabric.id);
-  const supplier = fabric.supplier ?? fabric.supplier_brand ?? "—";
-
-  const quotes = (fabric.supplier_quotes ?? []).slice();
-  const numericQuotes = quotes
-    .map((q) => ({
-      ...q,
-      num: typeof q.price_rmb_per_m === "number"
-        ? q.price_rmb_per_m
-        : parseFloat(String(q.price_rmb_per_m ?? "")) || NaN,
-    }))
-    .filter((q) => !isNaN(q.num));
-  const minPrice = numericQuotes.length ? Math.min(...numericQuotes.map((q) => q.num)) : null;
-
+function NotFound() {
   return (
-    <div className="container-page py-10">
-      <BackButton to="/fabrics" label="返回面料库" />
-
-      <div className="mt-6 grid gap-10 lg:grid-cols-[1.1fr_1fr]">
-        <div>
-          <div className="surface aspect-[4/3] overflow-hidden bg-stone-100">
-            {mainImg ? (
-              <img src={mainImg.url} alt={mainImg.alt} className="h-full w-full object-cover" />
-            ) : (
-              <div className="flex h-full w-full items-center justify-center text-stone-300">
-                <ImageOff size={64} />
-              </div>
-            )}
-          </div>
-          {imgs.length > 1 && (
-            <div className="mt-3 grid grid-cols-5 gap-2">
-              {imgs.slice(0, 5).map((it, i) => (
-                <div key={i} className="aspect-square overflow-hidden rounded-lg border border-stone-200 bg-stone-100">
-                  <img src={it.url} alt={it.alt} className="h-full w-full object-cover" />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div>
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="chip">{CATEGORY_LABEL[fabric.category]}</span>
-            {fabric.flame_retardant && (
-              <span className="chip bg-amber-100/70 border-amber-200 text-amber-900">
-                <Flame size={11} /> FR 阻燃
-              </span>
-            )}
-            {fabric.code && <span className="chip font-mono">{fabric.code}</span>}
-          </div>
-          <h1 className="mt-3 font-serif text-3xl text-ink">{fabric.name}</h1>
-          <Link
-            to={`/fabrics?supplier=${encodeURIComponent(supplier)}`}
-            className="mt-1 inline-block text-sm text-stone-500 hover:text-ink"
-          >
-            {supplier} →
+    <div className="min-h-screen bg-white text-neutral-900">
+      <header className="border-b border-neutral-200">
+        <div className="mx-auto flex max-w-6xl items-center px-8 py-4">
+          <Link to="/" className="text-sm font-medium tracking-tight">
+            面料库
           </Link>
-
-          {minPrice != null && (
-            <div className="surface mt-6 p-4">
-              <div className="label">最低报价</div>
-              <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-serif text-3xl text-accent">¥{minPrice.toFixed(0)}</span>
-                <span className="text-sm text-stone-500">/米 · {numericQuotes.length} 家供应商</span>
-              </div>
-            </div>
-          )}
-
-          <div className="mt-6">
-            <div className="label">规格</div>
-            <dl className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
-              {fabric.weight_gsm != null && (
-                <Spec k="克重" v={fabric.weight_gsm + " g/㎡" + (fabric.weight_range ? " (" + fabric.weight_range.min + "-" + fabric.weight_range.max + ")" : "")} />
-              )}
-              {fabric.width_cm != null && <Spec k="幅宽" v={fabric.width_cm + " cm"} />}
-              {fabric.spec_raw && <Spec k="原始规格" v={fabric.spec_raw} />}
-              {fabric.weave && <Spec k="纱线" v={fabric.weave} />}
-              {fabric.structure && <Spec k="组织" v={fabric.structure} />}
-              {fabric.finish && <Spec k="后整理" v={fabric.finish} />}
-              {fabric.fr_standard && <Spec k="阻燃标准" v={fabric.fr_standard} />}
-              {fabric.edge && <Spec k="布边" v={fabric.edge} />}
-              {fabric.moq != null && fabric.moq !== "" && <Spec k="起订量" v={String(fabric.moq)} />}
-              {fabric.fob_usd_per_m != null && fabric.fob_usd_per_m !== "" && (
-                <Spec k="FOB 上海" v={"$" + fabric.fob_usd_per_m + "/m"} />
-              )}
-              {fabric.price_rmb_per_m != null && <Spec k="单价" v={"¥" + fabric.price_rmb_per_m + "/m"} />}
-            </dl>
-          </div>
-
-          {fabric.composition && Object.keys(fabric.composition).length > 0 && (
-            <div className="mt-6">
-              <div className="label">成分</div>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {Object.entries(fabric.composition)
-                  .sort((a, b) => b[1] - a[1])
-                  .map(([k, v]) => (
-                    <span key={k} className="chip">
-                      {FIBER_LABEL[k] ?? k} {Math.round(v)}%
-                    </span>
-                  ))}
-              </div>
-              {fabric.composition_raw && (
-                <div className="mt-2 text-xs text-stone-500">原文：{fabric.composition_raw}</div>
-              )}
-            </div>
-          )}
-
-          {(fabric.texture || fabric.color) && (
-            <div className="mt-6 grid grid-cols-2 gap-4">
-              {fabric.texture && <Spec k="纹理" v={fabric.texture} />}
-              {fabric.color && <Spec k="色系" v={fabric.color} />}
-            </div>
-          )}
-
-          {fabric.features && fabric.features.length > 0 && (
-            <div className="mt-6">
-              <div className="label">核心特点</div>
-              <ul className="mt-2 space-y-1.5 text-sm text-stone-700">
-                {fabric.features.map((f) => (
-                  <li key={f} className="flex gap-2">
-                    <span className="mt-2 inline-block h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {fabric.applications && fabric.applications.length > 0 && (
-            <div className="mt-6">
-              <div className="label">推荐用途</div>
-              <div className="mt-2 flex flex-wrap gap-1.5">
-                {fabric.applications.map((a) => (
-                  <span key={a} className="chip">{a}</span>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
+      </header>
+      <div className="mx-auto max-w-6xl px-8 py-32">
+        <p className="text-sm text-neutral-500">该面料不存在。</p>
+        <Link
+          to="/"
+          className="mt-6 inline-block text-sm text-neutral-900 underline-offset-4 hover:underline"
+        >
+          ← 返回面料库
+        </Link>
       </div>
-
-      {quotes.length > 0 && (
-        <section className="mt-14">
-          <div className="mb-4">
-            <div className="label">Pricing</div>
-            <h2 className="mt-1 font-serif text-2xl text-ink">多供应商报价</h2>
-          </div>
-          <div className="surface overflow-hidden">
-            <table className="w-full text-sm">
-              <thead className="bg-stone-50 text-left text-xs uppercase tracking-wider text-stone-500">
-                <tr>
-                  <th className="px-4 py-3">供应商</th>
-                  <th className="px-4 py-3 text-right">单价 (¥/m)</th>
-                  <th className="px-4 py-3 text-right">起订量</th>
-                  <th className="px-4 py-3">联系方式</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-stone-200/70">
-                {quotes
-                  .slice()
-                  .sort((a, b) => {
-                    const an = typeof a.price_rmb_per_m === "number" ? a.price_rmb_per_m : parseFloat(String(a.price_rmb_per_m)) || 1e9;
-                    const bn = typeof b.price_rmb_per_m === "number" ? b.price_rmb_per_m : parseFloat(String(b.price_rmb_per_m)) || 1e9;
-                    return an - bn;
-                  })
-                  .map((q) => {
-                    const n = typeof q.price_rmb_per_m === "number" ? q.price_rmb_per_m : parseFloat(String(q.price_rmb_per_m));
-                    const isMin = minPrice != null && !isNaN(n) && n === minPrice;
-                    return (
-                      <tr key={q.supplier} className={isMin ? "bg-amber-50/60" : ""}>
-                        <td className="px-4 py-3 font-medium text-ink">
-                          {q.supplier}
-                          {isMin && <span className="ml-2 text-xs text-accent">最低</span>}
-                        </td>
-                        <td className="px-4 py-3 text-right tabular-nums">
-                          {q.price_rmb_per_m != null ? "¥" + q.price_rmb_per_m : "—"}
-                        </td>
-                        <td className="px-4 py-3 text-right text-stone-500">{q.moq ?? "—"}</td>
-                        <td className="px-4 py-3 text-xs text-stone-500">
-                          {q.phone && (
-                            <a href={"tel:" + q.phone} className="mr-3 inline-flex items-center gap-1 hover:text-ink">
-                              <Phone size={11} /> {q.phone}
-                            </a>
-                          )}
-                          {q.email && (
-                            <a href={"mailto:" + q.email} className="inline-flex items-center gap-1 hover:text-ink">
-                              <Mail size={11} /> {q.email}
-                            </a>
-                          )}
-                        </td>
-                      </tr>
-                    );
-                  })}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      )}
-
-      <section className="mt-12 text-xs text-stone-400">
-        <div className="label">Source</div>
-        <div className="mt-1">
-          {fabric.source_file}
-          {fabric.source_row ? " · row " + fabric.source_row : ""}
-        </div>
-      </section>
     </div>
   );
 }
 
-function Spec({ k, v }: { k: string; v: string }) {
+function SpecList({ fabric }: { fabric: Fabric }) {
+  const fobStr = (() => {
+    const v = moneyText(fabric.fob_usd_per_m, "$");
+    return v == null ? null : `${v}/m`;
+  })();
+  const rows: [string, string | null][] = [
+    ["规格", fabric.spec_raw ?? null],
+    ["成分", fabric.composition_raw ?? null],
+    [
+      "克重",
+      fabric.weight_gsm != null
+        ? `${fabric.weight_gsm} g/㎡` +
+          (fabric.weight_range
+            ? ` (${fabric.weight_range.min}–${fabric.weight_range.max})`
+            : "")
+        : null,
+    ],
+    ["幅宽", fabric.width_cm != null ? `${fabric.width_cm} cm` : null],
+    ["纱线", fabric.weave ?? null],
+    ["组织", fabric.structure ?? null],
+    ["后整理", fabric.finish ?? null],
+    ["阻燃标准", fabric.fr_standard ?? null],
+    ["布边", fabric.edge ?? null],
+    [
+      "起订量",
+      fabric.moq != null && fabric.moq !== "" ? String(fabric.moq) : null,
+    ],
+    ["FOB 上海", fobStr],
+    ["质感", fabric.texture ?? null],
+    ["颜色", fabric.color ?? null],
+  ];
+  const visible = rows.filter(([, v]) => v != null && v !== "");
+  if (visible.length === 0) return null;
   return (
-    <div>
-      <dt className="text-xs text-stone-500">{k}</dt>
-      <dd className="text-sm text-ink">{v}</dd>
+    <dl>
+      {visible.map(([k, v]) => (
+        <div
+          key={k}
+          className="flex items-baseline justify-between gap-6 border-b border-neutral-100 py-3 text-sm last:border-0"
+        >
+          <dt className="text-neutral-500">{k}</dt>
+          <dd className="text-right text-neutral-900">{v}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function FiberChips({ fabric }: { fabric: Fabric }) {
+  const entries = Object.entries(fabric.composition ?? {});
+  if (entries.length === 0) return null;
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {entries.map(([k, v]) => (
+        <span
+          key={k}
+          className="border border-neutral-200 px-2 py-0.5 text-xs text-neutral-600"
+        >
+          {(FIBER_LABEL[k] ?? k) + (v ? ` ${Math.round(v)}%` : "")}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function QuoteTable({ fabric }: { fabric: Fabric }) {
+  const quotes = fabric.supplier_quotes ?? [];
+  if (quotes.length === 0) return null;
+  const numerics = quotes.map((q) => ({
+    ...q,
+    num: priceValue(q.price_rmb_per_m),
+  }));
+  const minPrice = numerics.reduce<number | null>((acc, q) => {
+    if (q.num == null) return acc;
+    if (acc == null || q.num < acc) return q.num;
+    return acc;
+  }, null);
+  return (
+    <section>
+      <header className="mb-4 flex items-baseline justify-between">
+        <h2 className="text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+          供应商报价
+        </h2>
+        <span className="text-xs tabular-nums text-neutral-400">
+          {quotes.length} 家
+        </span>
+      </header>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-neutral-200 text-left text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+              <th className="py-2 pr-6 font-normal">供应商</th>
+              <th className="py-2 px-6 font-normal text-right">单价</th>
+              <th className="py-2 px-6 font-normal">起订量</th>
+              <th className="py-2 pl-6 font-normal">联系方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            {numerics.map((q, i) => {
+              const price = moneyText(q.price_rmb_per_m);
+              const isMin =
+                price != null && minPrice != null && q.num === minPrice;
+              const contact = [q.phone, q.email].filter(Boolean).join(" · ");
+              const moqStr =
+                q.moq != null && q.moq !== "" ? String(q.moq) : null;
+              return (
+                <tr key={i} className="border-b border-neutral-100 last:border-0">
+                  <td className="py-3 pr-6 align-top text-neutral-900">
+                    <span className={isMin ? "font-medium" : undefined}>
+                      {q.supplier}
+                    </span>
+                  </td>
+                  <td className="py-3 px-6 align-top text-right">
+                    {price ? (
+                      <span
+                        className={
+                          isMin
+                            ? "font-medium tabular-nums text-neutral-900"
+                            : "tabular-nums text-neutral-900"
+                        }
+                      >
+                        {price}
+                        <span className="ml-1 text-xs text-neutral-500">/m</span>
+                      </span>
+                    ) : null}
+                  </td>
+                  <td className="py-3 px-6 align-top tabular-nums text-neutral-600">
+                    {moqStr}
+                  </td>
+                  <td className="py-3 pl-6 align-top text-xs text-neutral-600">
+                    {contact || null}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+export default function FabricDetail() {
+  const { id } = useParams();
+  const fabric = fabrics.find((f) => f.id === id);
+  if (!fabric) return <NotFound />;
+
+  const imgs = fabricImages(fabric.id);
+  const main0 = fabricImage(fabric.id);
+  const [activeIdx, setActiveIdx] = useState(0);
+  const main = imgs[activeIdx] ?? main0;
+
+  const price = priceValue(fabric.price_rmb_per_m);
+
+  return (
+    <div className="min-h-screen bg-white text-neutral-900">
+      <header className="border-b border-neutral-200">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-4">
+          <Link to="/" className="text-sm font-medium tracking-tight">
+            面料库
+          </Link>
+          <Link
+            to="/"
+            className="text-xs text-neutral-500 transition hover:text-neutral-900"
+          >
+            ← 返回
+          </Link>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-6xl px-8 pb-24 pt-16">
+        <div className="grid gap-16 lg:grid-cols-2">
+          {/* Gallery */}
+          <div>
+            <div className="aspect-[4/5] w-full overflow-hidden bg-neutral-100">
+              {main ? (
+                <img
+                  src={main.url}
+                  alt={main.alt}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <div
+                  className="flex h-full w-full items-center justify-center"
+                  aria-hidden
+                >
+                  <span className="block h-px w-12 bg-neutral-300" />
+                </div>
+              )}
+            </div>
+            {imgs.length > 1 && (
+              <div className="mt-3 grid grid-cols-6 gap-2">
+                {imgs.slice(0, 6).map((it, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveIdx(i)}
+                    aria-label={`第 ${i + 1} 张图`}
+                    className={
+                      "aspect-square overflow-hidden bg-neutral-100 transition " +
+                      (i === activeIdx
+                        ? "outline outline-1 outline-neutral-900"
+                        : "opacity-70 hover:opacity-100")
+                    }
+                  >
+                    <img
+                      src={it.url}
+                      alt={it.alt}
+                      className="h-full w-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Title + meta + specs */}
+          <div className="space-y-10">
+            <div>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[10px] uppercase tracking-[0.18em] text-neutral-500">
+                <span>{CATEGORY_LABEL[fabric.category]}</span>
+                {fabric.flame_retardant && <span>· 阻燃</span>}
+                {fabric.weight_gsm != null && (
+                  <span className="text-neutral-400">
+                    · {fabric.weight_gsm} g/㎡
+                  </span>
+                )}
+              </div>
+              <h1 className="mt-3 text-2xl font-medium leading-snug tracking-tight text-neutral-900">
+                {fabric.name}
+              </h1>
+              {fabric.code && (
+                <p className="mt-1.5 text-sm tabular-nums text-neutral-500">
+                  {fabric.code}
+                </p>
+              )}
+              {price != null && (
+                <p className="mt-4 text-base font-medium tabular-nums text-neutral-900">
+                  ¥{price}/m
+                </p>
+              )}
+            </div>
+
+            <SpecList fabric={fabric} />
+
+            <FiberChips fabric={fabric} />
+
+            {fabric.features && fabric.features.length > 0 && (
+              <section>
+                <h2 className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+                  面料特点
+                </h2>
+                <ul className="space-y-1.5 text-sm text-neutral-700">
+                  {fabric.features.map((f, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span
+                        aria-hidden
+                        className="mt-2 h-px w-3 flex-none bg-neutral-300"
+                      />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {fabric.applications && fabric.applications.length > 0 && (
+              <section>
+                <h2 className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+                  适用产品
+                </h2>
+                <ul className="space-y-1.5 text-sm text-neutral-700">
+                  {fabric.applications.map((a, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span
+                        aria-hidden
+                        className="mt-2 h-px w-3 flex-none bg-neutral-300"
+                      />
+                      <span>{a}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+          </div>
+        </div>
+
+        {(fabric.supplier_quotes ?? []).length > 0 && (
+          <div className="mt-20">
+            <QuoteTable fabric={fabric} />
+          </div>
+        )}
+      </main>
     </div>
   );
 }
