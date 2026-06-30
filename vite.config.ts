@@ -33,6 +33,25 @@ export default defineConfig({
   server: {
     port: 5173,
     open: false,
+    // Dev convenience: proxy the local API through Vite so the frontend
+    // can call `/api/*` (relative) and we don't need VITE_API_BASE for dev.
+    // Vite proxy matches paths before the static handler, so /api/health
+    // goes to http://localhost:5001/api/health and everything else falls
+    // through to the SPA.
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5001',
+        changeOrigin: false,
+      },
+      // Archive images live on the API at /uploads/archive/* (served by
+      // server/src/index.ts's express.static). Mirror that mount path
+      // through Vite so relative URLs like /uploads/archive/.../xxx.png
+      // resolve in dev.
+      '/uploads': {
+        target: 'http://localhost:5001',
+        changeOrigin: false,
+      },
+    },
   },
   preview: {
     port: 4173,
