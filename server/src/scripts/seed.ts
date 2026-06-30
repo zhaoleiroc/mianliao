@@ -542,9 +542,15 @@ async function main(): Promise<void> {
   let imgCount = 0;
   for (const it of imageManifest.items) {
     if (!it.matched_fabric_id) continue;
-    // archive_path is e.g. "assets\fabrics\knit\huarui\xxx.png"
-    // Normalize to forward slashes
-    const urlPath = it.archive_path.replace(/\\/g, '/').replace(/^assets\//, '');
+    // archive_path is e.g. "assets/fabrics/knit/huarui/xxx.png".
+    // Normalize slashes, strip the "assets/" prefix, AND the leading
+    // "fabrics/" — the files are copied to wwwroot/uploads/archive/<cat>/<sup>/
+    // (no "fabrics" segment). URLs must match the on-disk layout or
+    // /uploads/* static serves will 404.
+    const urlPath = it.archive_path
+      .replace(/\\/g, '/')
+      .replace(/^assets\/fabrics\//, '')
+      .replace(/^fabrics\//, '');
     // Only the first image (per matched fabric, in manifest order) is the cover.
     // Subsequent images for the same fabric are non-cover with sort_order > 0.
     const seenSoFar = imageManifest.items
@@ -556,7 +562,7 @@ async function main(): Promise<void> {
       pool
         .request()
         .input('fabric_id', sql.NVarChar(32), it.matched_fabric_id!)
-        .input('url', sql.NVarChar(512), `archive/${urlPath.replace(/^fabrics\//, 'fabrics/')}`)
+        .input('url', sql.NVarChar(512), `archive/${urlPath}`)
         .input('sort_order', sql.Int, sortOrder)
         .input('is_cover', sql.Bit, isCover)
         .input('source', sql.NVarChar(16), 'archive')
