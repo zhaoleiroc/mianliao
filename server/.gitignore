@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+wwwroot/uploads/fabrics/
+!wwwroot/uploads/fabrics/.gitkeep
+# runtime copies of assets/fabrics/{category}/{supplier}/*.png|jpg produced by `npm run seed`.
+# regenerate via `npm run seed`; not checked in.
+wwwroot/uploads/archive/*
+!wwwroot/uploads/archive/.gitkeep
+.DS_Store
