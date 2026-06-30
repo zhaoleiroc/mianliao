@@ -120,9 +120,25 @@ export async function request<T = unknown>(path: string, opts: RequestOptions = 
     if (json.code !== 0) {
       throw new ApiError(res.status, json.code, json.message, json.data);
     }
-    return (json.data ?? null) as T;
+    // Server-side success envelopes always carry a `data` field. If the
+    // backend returned `null` (e.g. 204-style "no body"), don't lie about the
+    // shape — surface a clear ApiError so callers don't try `null.items`.
+    if (json.data === null || json.data === undefined) {
+      throw new ApiError(res.status, 500, '服务端返回空数据', null);
+    }
+    return json.data as T;
   }
-  return json as T;
+  // We expected a JSON envelope but got something else — likely an HTML
+  // SPA fallback (200 with <!doctype html>) when a relative `/api/...`
+  // path resolves to the dev server instead of the API. Surface this
+  // explicitly so we don't silently return `null` and crash callers
+  // downstream with `null.items`.
+  throw new ApiError(
+    res.status,
+    0,
+    'API 返回非 JSON 响应（多半是 VITE_API_BASE 没设 / 后端未启动）',
+    null,
+  );
 }
 
 async function tryRefresh(): Promise<boolean> {
@@ -160,7 +176,15 @@ export function apiBase(): string {
 export function imageUrl(path: string | null | undefined): string | null {
   if (!path) return null;
   if (/^https?:\/\//i.test(path)) return path;
-  // archive/* paths come from the API; assets/* could come from Vite publicDir
+  // archive/* paths come from the API. Server stores files under
+  // server/wwwroot/uploads/archive/ and exposes them via Express static
+  // mounted at /uploads (see server/src/index.ts). Prepend /uploads so the
+  // browser can fetch them through Vite's /api → :5001 proxy (or directly
+  // against the API base in production).
+  if (path.startsWith('archive/')) {
+    return `${API_BASE}/uploads/${path}`;
+  }
+  // assets/* paths come from Vite publicDir (legacy static catalogue).
   if (path.startsWith('assets/')) {
     return `${import.meta.env.BASE_URL}${path}`;
   }
